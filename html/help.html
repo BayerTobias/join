@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Help</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/help.css" />
+    <link rel="shortcut icon" href="../assets/img/logos/logo_Regular.png" type="image/x-icon">
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body onload="init()">
+  <header class="header" w3-include-html="../assets/templates/header.html"></header>
+  <nav class="sidebar" w3-include-html="../assets/templates/sidebar.html"></nav>
+  
+  <main class="main">
+    <div class="arrow-left">
+      <img onclick="previousPage()" id="arrow-left-icon" class="arrow-left-icon" src="../assets/img/icons/arrow-left.svg">
+    </div>
+    <h3 class="help-h3">Kanban Project Management Tool</h3>
+    <h1 class="help-h1">Help</h1>
+    <h2 class="help-h2">What is Join?</h2>
+    <p class="help-text">Join is a project management tool that provides an overview of tasks, their priorities and the responsibilities for the tasks. It uses Kanban as a method from agile project management. The goal is to ideally distribute the work to be done and the available capacities. The most important element of this method is the Kanban Board. This is divided into different work phases.
+      <br><br>Additionally, Join offers the possibility to add new contacts under the Contacts tab.
+    </p>
+    <h2 class="help-h2">How to use it</h2>
+    <ol>
+      <li class="help-li">
+        <p class="li-text">Add a task in the To do column under the Add Task tab. Fill in all the fields to provide other team members with as much information as possible. The task will appear as a single card on the board.</p>
+      </li>
+      <li class="help-li">
+        <p class="li-text">Assign the task to a team member or yourself.</p>
+      </li>
+      <li class="help-li">
+        <p class="li-text">Depending on the processing status, the tasks should be moved to the appropriate columns to reflect the actual status of the workflow.</p>
+      </li>
+    </ol>
+  </main>
+
+</body>
+</html>
+
+<script src="../js/help.js"></script>
+</body>
+</html>

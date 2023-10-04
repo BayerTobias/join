@@ -1,0 +1,32 @@
+<span>Kanban Project Management Tool</span>
+
+<div id="headerFrame" class="right-frame">
+  <a href="help.html">
+    <img src="../assets/img/icons/header-question-mark.svg" alt="" />
+  </a>
+ 
+
+  <div class="img-ellipse" >
+    <img src="../assets/img/logos/ellipse.png" alt="grey ellipse" />
+    <div class="img-profile-wrapper">
+      <div onclick="toggleLogOutModal()" id="default-profile">
+        
+      </div>
+      <img id="img-profile" onclick="toggleLogOutModal()" src=""
+      alt="Profile picture" />
+    </div>
+  </div>
+</div>
+
+<label id="mobileTaskBtn" for="submit-form" class="button-with-icon d-none" tabindex="0">
+  <span>Create Task</span>
+  <img src="../assets/img/icons/add-task-icon.svg" alt="">
+</label>
+
+<div id="log-out-modal-wrapper" class="log-out-modal-wrapper d-none" onclick="toggleLogOutModal()">
+  <div class="log-out-modal" >
+    <a href="help.html">Help</a>
+    <a href="legal.html">Legal notice</a>
+    <span onclick="doNotClose(event); logOut();">Log out</span>
+  </div>
+</div>

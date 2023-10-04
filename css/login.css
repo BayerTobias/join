@@ -1,0 +1,258 @@
+/* ===== General Styling ===== */
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    overflow: hidden !important;
+}
+
+.animate-register {
+    opacity: 100% !important;
+    scale: 1 !important;
+}
+
+.login-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 35px;
+    gap: 35px;
+    min-width: 653px;
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: var(--shadoe-backlog-box);
+}
+
+.login-modal p {
+    text-align: center;
+    font-size: 21px;
+}
+
+.password-modal {
+    padding: 35px 85px;
+}
+
+.password-modal>h1,
+.password-modal>p {
+    margin: 0 !important;
+}
+
+#registerSuccessBox {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    border-radius: 30px;
+    background-color: white;
+    color: var(--secondary-color);
+    box-shadow: var(--shadoe-backlog-box);
+    padding: 24px;
+    width: 350px;
+    line-height: 120%;
+    transition: 425ms ease-in-out;
+    scale: 0;
+    opacity: 0;
+}
+
+/* ===== Logo animation ===== */
+#openImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    z-index: 2;
+    transition: 425ms;
+}
+
+#openImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 425ms ease-in;
+    z-index: 3;
+    scale: 1.5;
+}
+
+.logo-animation {
+    top: 50px !important;
+    left: 80px !important;
+    scale: 0.8 !important;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo-animation-bg {
+    background-color: rgba(246, 247, 248, 0) !important;
+}
+
+.negative-z {
+    z-index: -1 !important;
+}
+
+
+/* ===== Headline =====  */
+.login-modal h1 {
+    position: relative;
+    font-size: 61px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.login-modal h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -24px;
+    width: 150px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+
+/* ===== Form ===== */
+.user-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 36px;
+    width: 422px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper img {
+    position: absolute;
+    top: 26.5px;
+    right: 21px;
+    transform: translateY(-50%);
+}
+
+input[type=password]+img {
+    cursor: pointer;
+}
+
+.user-form input {
+    width: 422px;
+    padding: 13px 41px 13px 21px;
+    border-radius: 10px;
+    font-size: 21px;
+    border: 1px solid var(--sidebar-text-color);
+}
+
+.user-form input::placeholder {
+    font-size: 21px;
+    color: var(--sidebar-text-color);
+}
+
+.user-form input:focus {
+    outline: none;
+}
+
+
+/* ===== Forgot Password Frame ===== */
+.reset-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.forgot-password {
+    cursor: pointer;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.checkmark {
+    cursor: pointer;
+}
+
+
+/* ===== Log in ===== */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+/* ===== Buttons ===== */
+.button-wo-icon {
+    height: 51px;
+    width: 145px;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.button-secondary-wo-icon {
+    height: 51px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 21px;
+    font-weight: 700;
+    width: auto;
+}
+
+.password-btn {
+    width: max-content;
+}
+
+
+/* ===== Sign up ===== */
+.signup-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 67px;
+    right: 114px;
+    gap: 35px;
+}
+
+.signup-container span {
+    font-size: 21px;
+}
+
+.signup-container a {
+    font-size: 16px;
+    width: auto;
+}
+
+
+/* ===== ============ ===== */
+/* ===== Sign up Page ===== */
+
+.back-arrow {
+    position: absolute;
+    left: 37px;
+    top: 37px;
+    cursor: pointer;
+}
+
+.sign-up-modal {
+    gap: 0;
+}
+
+.sign-up-modal h1 {
+    margin-bottom: 59px;
+}
